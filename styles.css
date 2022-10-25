@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #EDEDED;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    color: whitesmoke;
+    background-color: #B73E3E;
+    text-align: center;
+    min-height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-container {
+    width: 80vw;
+    height: 10vh;
+    margin-bottom: 6vh;
+    background-color: #06283D;
+    color: whitesmoke;
+    font-size: x-large;
+    border-radius: 5px;
+}
+
+.result {
+    margin: 10px;
+    padding: 5px;
+    width: 40vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 5px;
+}
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5vh;
+    margin-top: 4vh;
+    margin-bottom: 8vh;
+    width: 80vw;
+    height: 20vh;
+}
+
+.option {
+    width: 80vw;
+    height: 10vh;
+    padding: 2vh 0;
+    font-size: larger;
+    background-color: #3F0071;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+}
+
+.option:hover {
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+.navigation {
+    width: 80vw;
+    height: 10vh;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.evaluate,
+.next {
+    width: 30vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: larger;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+}
+
+.evaluate {
+    background-color: #1C6758;
+}
+
+.next {
+    background-color: #1C6758;
+}
+
+
+.blinker {
+    animation: blinker 1.5s linear infinite;
+    background-color: antiquewhite;
+    border: 2px solid grey;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
